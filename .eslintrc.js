@@ -40,15 +40,15 @@ module.exports = {
     'array-element-newline': 0,
 
     // 箭头函数的书写规则
-    // @off 不限制
+    // @off 不作限制
     'arrow-body-style': 0,
 
     // 箭头函数的圆括号使用规则
-    // @off 不限制
+    // @off 不作限制
     'arrow-parens': 0,
 
     // 箭头函数的空格使用规则
-    // @off 不限制
+    // @off 不作限制
     'arrow-spacing': 0,
 
     // 不能在块外使用块作用域内 var 定义的变量
@@ -67,7 +67,7 @@ module.exports = {
     'callback-return': 0,
 
     // 变量名必须使用驼峰式
-    // @off 暂不限制
+    // @off 暂不作限制
     'camelcase': 0,
 
     // 注释的首字母应该大写
@@ -119,7 +119,7 @@ module.exports = {
     'dot-location': 0,
 
     // 文件最后必须有空行
-    // @off 不限制
+    // @off 不作限制
     'eol-last': 0,
 
     // 必须使用 === 和 !== ，和 null 对比时除外
@@ -135,19 +135,19 @@ module.exports = {
     'func-call-spacing': 0,
 
     // 把函数赋给变量或对象属性时，函数名和变量名或对象属性名必须一致
-    // @off 不限制
+    // @off 不作限制
     'func-name-matching': 0,
 
     // 不允许匿名函数
-    // @off 不限制
+    // @off 不作限制
     'func-names': 0,
 
     // 必须只使用函数申明或只使用函数表达式
-    // @off 不限制
+    // @off 不作限制
     'func-style': 0,
 
     // generator 的 * 前后空格使用规则
-    // @off 不限制
+    // @off 不作限制
     'generator-star-spacing': 0,
 
     // getter 必须有返回值，允许返回 undefined
@@ -200,22 +200,22 @@ module.exports = {
     'linebreak-style': 0,
 
     // 单行注释必须写在前一行还是行尾
-    // @off 不限制
+    // @off 不作限制
     'line-comment-position': 0,
 
     // 注释前后是否要空一行
-    // @off 不限制
+    // @off 不作限制
     'lines-around-comment': 0,
 
     // 最大块嵌套深度为 5 层
     'max-depth': [2, 5],
 
     // 限制单行代码的长度
-    // @off 不限制
+    // @off 不作限制
     'max-len': 0,
 
     // 限制单个文件最大行数
-    // @off 不限制
+    // @off 不作限制
     'max-lines': 0,
 
     // 最大回调深度为 3 层
@@ -233,7 +233,7 @@ module.exports = {
     'max-statements': 0,
 
     // 三元表达式的换行规则
-    // @off 不限制
+    // @off 不作限制
     'multiline-ternary': 0,
 
     // new关键字后类名应首字母大写
@@ -245,7 +245,7 @@ module.exports = {
     'new-parens': 2,
 
     // 链式调用是否要换行
-    // @off 不限制
+    // @off 不作限制
     'newline-per-chained-call': 0,
 
     // 禁止 alert，提醒开发者，上线时要去掉
@@ -258,7 +258,7 @@ module.exports = {
     'no-await-in-loop': 2,
 
     // 禁止位运算
-    // @off 不限制
+    // @off 不作限制
     'no-bitwise': 0,
 
     // 禁止在 Node.js 中直接调用 Buffer 构造函数
@@ -458,7 +458,7 @@ module.exports = {
     }],
 
     // 相同类型的 require 必须放在一起
-    // @off 不限制
+    // @off 不作限制
     'no-mixed-requires': 0,
 
     // 禁止混用空格和 tab 来做缩进，必须统一
@@ -599,7 +599,7 @@ module.exports = {
     'no-sync': 0,
 
     // 禁止使用 tabs
-    // @off 不限制
+    // @off 不作限制
     'no-tabs': 0,
 
     // 禁止普通字符串中出现模板字符串语法
@@ -631,7 +631,7 @@ module.exports = {
     'no-undefined': 2,
 
     // 禁止变量名中使用下划线
-    // @off 暂不限制
+    // @off 暂不作限制
     'no-underscore-dangle': 0,
 
     // 禁止出现难以理解的多行代码
@@ -733,7 +733,7 @@ module.exports = {
     'object-curly-spacing': 0,
 
     // 对象每个属性必须独占一行
-    // @off 不限制
+    // @off 不作限制
     'object-property-newline': 0,
 
     // obj = { a: a } 必须转换成 obj = { a }
@@ -791,7 +791,7 @@ module.exports = {
     'prefer-spread': 0,
 
     // 必须使用模板字符串来代替字符串拼接
-    // @off 不限制
+    // @off 不作限制
     'prefer-template': 0,
 
     // 字符串必须使用单引号
@@ -822,14 +822,15 @@ module.exports = {
     'rest-spread-spacing': [2, 'never'],
 
     // 分号前后的空格规则
-    // @off 不限制
+    // @off 不作限制
     'semi-spacing': 0,
 
     // 禁止行首出现分号
     'semi-style': [2, 'last'],
 
     // 行尾必须使用分号结束
-    'semi': 2,
+    // @off 不作限制
+    'semi': 0,
 
     // imports 必须排好序
     // @off 没有必要
@@ -883,11 +884,11 @@ module.exports = {
     'symbol-description': 2,
 
     // 模板字符串 ${} 前后的空格规则
-    // @off 不限制
+    // @off 不作限制
     'template-curly-spacing': 0,
 
     // 模板字符串前后的空格规则
-    // @off 不限制
+    // @off 不作限制
     'template-tag-spacing': 0,
 
     // 所有文件头禁止出现 BOM
@@ -911,11 +912,11 @@ module.exports = {
     'wrap-iife': [2, 'inside'],
 
     // 正则表达式必须用圆括号括起来
-    // @off 不限制
+    // @off 不作限制
     'wrap-regex': 0,
 
     // yield 的 * 前后空格规则
-    // @off 不限制
+    // @off 不作限制
     'yield-star-spacing': 0,
 
     // 禁止Yoda格式的判断条件，如 if (true === a)，应使用 if (a === true)
