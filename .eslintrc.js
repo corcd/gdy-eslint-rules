@@ -1,3 +1,5 @@
+
+
 module.exports = {
   "env": {
     'browser': true,
@@ -287,8 +289,11 @@ module.exports = {
       'allowParens': true
     }],
 
-    // 禁止使用 console，提醒开发者，上线时要去掉
-    'no-console': 1,
+    // 禁止使用 console，线上环境检测
+    'no-console': process.env.NODE_ENV === 'production' ? '1' : '0',
+
+    // 禁止 debugger 语句，线上环境检测
+    'no-debugger': process.env.NODE_ENV === 'production' ? '1' : '0',
 
     // 禁止使用常量作为判断条件
     'no-constant-condition': [2, {
@@ -304,9 +309,6 @@ module.exports = {
 
     // 禁止正则表达式中出现 Ctrl 键的 ASCII 表示，即/\x1f/
     'no-control-regex': 2,
-
-    // 禁止 debugger 语句，提醒开发者，上线时要去掉
-    'no-debugger': 1,
 
     // 禁止对变量使用 delete 关键字，删除对象的属性不受限制
     'no-delete-var': 2,
