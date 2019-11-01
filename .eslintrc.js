@@ -185,10 +185,6 @@ module.exports = {
     // @off 没有必要变量名
     "id-match": 0,
 
-    // 缩进使用 tab 还是空格
-    // @off 不关心
-    "indent": 0,
-
     // 变量必须在定义的时候赋值
     // @off 先定义后赋值很常见
     "init-declarations": 0,
