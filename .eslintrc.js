@@ -160,7 +160,7 @@ module.exports = {
 
     // getter 必须有返回值，允许返回 undefined
     "getter-return": [2, {
-      allowImplicit: true
+      "allowImplicit": true
     }],
 
     // require 必须在全局作用域下
@@ -479,9 +479,9 @@ module.exports = {
 
     // 连续空行的数量限制
     "no-multiple-empty-lines": [2, {
-      max: 3, // 文件内最多连续 3 个
-      maxEOF: 1, // 文件末尾最多连续 1 个
-      maxBOF: 1 // 文件头最多连续 1 个
+      "max": 3, // 文件内最多连续 3 个
+      "maxEOF": 1, // 文件末尾最多连续 1 个
+      "maxBOF": 1 // 文件头最多连续 1 个
     }],
 
     // 禁止 if 中出现否定表达式 !==
@@ -872,8 +872,8 @@ module.exports = {
     // 注释的斜线和星号后要加空格
     "spaced-comment": [2, "always", {
       "block": {
-        exceptions: ["*"],
-        balanced: true
+        "exceptions": ["*"],
+        "balanced": true
       }
     }],
 
