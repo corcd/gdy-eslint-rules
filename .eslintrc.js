@@ -1,7 +1,9 @@
 module.exports = {
   "root": true,
   "parserOptions": {
-    "parser": "babel-eslint"
+    "parser": "babel-eslint",
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   },
   "env": {
     "browser": true,
@@ -14,10 +16,6 @@ module.exports = {
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
-  },
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "sourceType": "module"
   },
   "plugins": [
     "vue",
