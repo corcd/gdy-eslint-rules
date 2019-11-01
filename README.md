@@ -2,6 +2,8 @@
 
 广电云前端团队 ESLint 静态检查规则（2019-11-01）
 
+> 推荐使用 vue-cli 的内置 ESLint 配置方法，vs code 格式化工具推荐 beautify & prettier
+
 ## 使用方法
 
 1. 首先执行 shell 目录下对应包管理的脚本文件安装必要模块
@@ -46,4 +48,3 @@ cli 已集成安装 ESLint ，运行 shell 目录下 init 脚本即可
 }
 ```
 
-> 推荐使用 vue-cli 的内置 ESLint 配置方法
