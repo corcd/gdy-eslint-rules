@@ -10,7 +10,7 @@
 
 ### 针对于 vue-cli 2
 
-访问 `build\webpack.base.config.js` 文件新增：
+访问 `webpack.config.js` 文件新增：
 
 ```js
 // webpack.config.js
@@ -38,7 +38,7 @@ cli 已集成安装 ESLint ，运行 shell 目录下 init 脚本即可
 
 访问 `package.json` 文件新增
 
-```jsonc
+```json
 // package.json
 "scripts": {
   "lint": "eslint --fix --ext .js,.vue src",
