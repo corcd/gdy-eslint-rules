@@ -26,8 +26,9 @@ module.exports = {
 
     'prettier/prettier': 2,
 
-    // 缩进 2 ~ 4 个空格
-    "indent": [2, 4],
+    // 缩进检测
+    // @off 不作限制
+    "indent": 0,
 
     // 设置了 setter ，必须相应设置 getter ，反之不必须
     "accessor-pairs": 2,
