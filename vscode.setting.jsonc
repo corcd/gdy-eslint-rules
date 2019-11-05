@@ -13,22 +13,22 @@
   "[scss]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
-  "vetur.format.defaultFormatter.html": "js-beautify-html",
+  "vetur.validation.template": false,
+  "vetur.format.defaultFormatter.html": "prettyhtml",
   "vetur.format.defaultFormatter.css": "prettier",
   "vetur.format.defaultFormatter.js": "prettier-eslint",
   "vetur.format.defaultFormatter.scss": "prettier",
   "vetur.format.defaultFormatter.less": "prettier",
-  "vetur.format.defaultFormatterOptions": {
-    "js-beautify-html": {
-      "wrap_attributes": "force-aligned" //属性强制折行对齐
-    }
-  },
+  // "vetur.format.defaultFormatterOptions": {
+  //   "js-beautify-html": {
+  //     "wrap_attributes": "force-aligned" //属性强制折行对齐
+  //   }
+  // },
   "editor.tabSize": 2,
   "eslint.autoFixOnSave": true, //保存时使用自动格式化
   "eslint.validate": [ //验证文件类型
     "javascript",
     "javascriptreact",
-    "vue",
     "html",
     "jsx",
     {
@@ -40,7 +40,7 @@
       "autoFix": true
     }
   ],
-  "prettier.eslintIntegration": true, //让prettier使用eslint的代码格式进行校验
+  "prettier-eslint.eslintIntegration": true, //让prettier使用eslint的代码格式进行校验
   "prettier.semi": false,
   "prettier.singleQuote": true, //使用单引号而不是双引号
   "prettier.jsxBracketSameLine": true, //将>多行JSX元素放在最后一行的末尾，而不是单独放在下一行
