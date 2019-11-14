@@ -12,15 +12,16 @@ module.exports = {
     commonjs: true,
     es6: true
   },
-  extends: ['plugin:vue/essential'],
+  extends: ['plugin:vue/essential', 'standard'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly'
   },
-  plugins: ['vue', 'prettier'],
+  plugins: ['html', 'vue', 'prettier'],
   rules: {
     // 0，1，2 分别表示 off, warning, error
-
+    
+    // 对 prettier 提示的内容做标红处理
     'prettier/prettier': 2,
 
     // 缩进检测

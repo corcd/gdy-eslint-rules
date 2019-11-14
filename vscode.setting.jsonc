@@ -5,13 +5,16 @@
     "editor.defaultFormatter": "HookyQR.beautify"
   },
   "[javascript]": {
-    "editor.defaultFormatter": "HookyQR.beautify"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.defaultFormatter": "HookyQR.beautify"
   },
   "[scss]": {
     "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vetur.validation.template": false,
   "vetur.format.defaultFormatter.html": "prettyhtml",
@@ -40,9 +43,5 @@
       "autoFix": true
     }
   ],
-  "prettier-eslint.eslintIntegration": true, //让prettier使用eslint的代码格式进行校验
-  "prettier.semi": false,
-  "prettier.singleQuote": true, //使用单引号而不是双引号
-  "prettier.jsxBracketSameLine": true, //将>多行JSX元素放在最后一行的末尾，而不是单独放在下一行
   "editor.formatOnSave": true //保存时自动格式化
 }
