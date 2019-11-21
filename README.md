@@ -1,8 +1,8 @@
 # gdy-eslint-rules
 
-广电云前端团队 ESLint 静态检查规则（2019-11-01）
+广电云前端团队 ESLint 静态检查规则（2019-11-21）
 
-> 推荐使用 vue-cli 的内置 ESLint 配置方法，vs code 格式化工具推荐 beautify & prettier
+> 推荐使用 vue-cli 的内置 ESLint 配置方法，VS Code 格式化工具推荐 prettier
 
 ## 使用方法
 
@@ -10,19 +10,19 @@
 
 访问 `package.json` 文件新增：
 
-```json
+```jsonc
 // package.json
 "scripts": {
-  "lint": "eslint --fix --ext .js,.vue src", // vue-cli 工程可以使用默认 lint
-  "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.vue\""
+  "lint": "eslint --fix --ext .js,.vue src", // vue-cli v3 以上工程推荐使用默认 vue-cli-service lint
+  "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.vue\"" // 全局统一格式化代码
 }
 ```
 
-### 针对于非 vue-cli 工程
+### 针对于 vue-cli v2 工程
 
 1. 首先执行 shell 目录下对应包管理的脚本文件安装必要模块
 2. 然后执行 shell 目录下 init 脚本
-3. 最后根据当前项目内的模板文件，将目录下 .eslintrc.js 内的 rules 属性替换，同时配置好相应的规则 env、parserOptions、plugins），执行 npm run lint / yarn lint 即可
+3. 最后根据当前项目内的模板文件，将目录下 `.eslintrc.js` 内的 rules 属性替换，同时配置好相应的规则 env、parserOptions、plugins），执行 `npm run lint` / `yarn lint` 即可
 
 其中需要访问 `webpack.config.js` 文件新增：
 
@@ -44,12 +44,12 @@ module.exports = {
 }
 ```
 
-### 针对于 vue-cli 工程
+### 针对于 vue-cli v3 及以上工程
 
-> vue-cli 推荐升级至 v3 或 v4，需安装依赖 eslint-plugin-html、eslint-plugin-prettier
+> vue-cli 推荐升级至 v3 或 v4，需安装依赖 eslint-plugin-html、eslint-plugin-prettier、prettier-eslint、prettier-eslint-cli
 
 1. cli 已集成安装 ESLint ，运行 shell 目录下 init 脚本即可; 若工程初始化时未加入 ESLint，可运行 `vue add eslint` 添加
-2. 根据当前项目内的模板文件，将目录下 .eslintrc.js 内的 rules 属性替换，同时配置好相应的规则（env、parserOptions、plugins），执行 npm run lint / yarn lint 即可
+2. 根据当前项目内的模板文件，将目录下 `.eslintrc.js` 内的 rules 属性替换，同时配置好相应的规则（env、parserOptions、plugins），执行 `npm run lint` / `yarn lint` 即可
 
 ### 特殊情况
 
@@ -57,7 +57,7 @@ module.exports = {
 
 #### 整个文件范围内禁止规则出现警告
 
-将/_ eslint-disable _/放置于文件最顶部
+将`/* eslint-disable */`放置于文件最顶部
 
 ```js
 /* eslint-disable */
