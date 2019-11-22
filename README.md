@@ -13,12 +13,12 @@
 ```jsonc
 // package.json
 "scripts": {
-  "lint": "eslint --fix --ext .js,.vue src", // vue-cli v3 以上工程推荐使用默认 vue-cli-service lint
+  "lint": "eslint --fix --ext .js,.vue src", // 代码扫描检查，vue-cli v3 以上工程推荐使用默认的 vue-cli-service lint
   "format": "prettier-eslint --write \"src/**/*.js\" \"src/**/*.vue\"" // 全局统一格式化代码
 }
 ```
 
-### 针对于 vue-cli v2 工程
+### 针对于 vue-cli v2 或非 vue-cli 工程
 
 1. 首先执行 shell 目录下对应包管理的脚本文件安装必要模块
 2. 然后执行 shell 目录下 init 脚本

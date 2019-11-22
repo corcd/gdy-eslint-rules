@@ -1,6 +1,7 @@
 {
   "eslintIntegration": true,
-  "singleQuote": true, 
+  "singleQuote": true,
+  "endOfLine": "auto",
   "semi": false,
   "jsxBracketSameLine": true
 }
